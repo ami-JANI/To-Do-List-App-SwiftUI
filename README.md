@@ -2,6 +2,8 @@
 
 CSE 3218 Mobile Computing Lab Assignment.
 
+> 👉 **Running it on the Mac? Start with [NEXT_STEPS.md](NEXT_STEPS.md).**
+
 A simple iOS to-do list app built with **SwiftUI**, **Firebase Authentication** (email + password) and **Cloud Firestore**.
 
 ## Features
