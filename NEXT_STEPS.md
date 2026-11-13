@@ -106,5 +106,5 @@ git push
 | Sign up/sign in shows a **keychain** error | **Step 5**: make sure a Team is chosen and Keychain Sharing is listed. Then **Product → Clean Build Folder** (⇧⌘K) and run again. |
 | *"Missing or insufficient permissions"* | You are signed in with a different Firebase project's plist. Download the plist from project `fir-todoapp-cb4b5` (**Step 3**). |
 | *"The password must be 6 characters long or more"* | Use a longer password. |
-| Xcode is older than 15.3 and the project won't open or build | Ask for a Mac with a newer Xcode, or tell Claude the exact error. |
-| Any other red error | Copy the full error text and send it to Claude. |
+| Xcode is older than 15.3 and the project won't open or build | Ask for a Mac with a newer Xcode, or search the exact error online. |
+| Any other red error | Copy the full error text and search it online, or ask your lab teacher. |
