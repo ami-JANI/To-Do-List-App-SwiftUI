@@ -44,20 +44,21 @@ If you see a package error: **File → Packages → Reset Package Caches**, then
 > Make sure the file name is exactly `GoogleService-Info.plist`.
 > If the Mac saves it as `GoogleService-Info (1).plist`, rename it.
 
-### Step 4: Add the plist to Xcode
+### Step 4: Put the plist in the project folder
 
-1. Drag `GoogleService-Info.plist` from **Downloads** into the yellow **FirebaseTodoApp** folder
-   in Xcode's left sidebar (the same folder that has `FirebaseTodoAppApp.swift`).
-2. In the pop-up window:
-   - ✅ **Copy items if needed**
-   - ✅ Target **FirebaseTodoApp** is ticked
-3. Click **Finish**.
+The Xcode project already points to `FirebaseTodoApp/GoogleService-Info.plist`. It shows in **red** in
+Xcode until the file is there. You only need to copy the file in:
+
+1. In **Finder**, copy `GoogleService-Info.plist` from **Downloads** into the
+   `To-Do-List-App-SwiftUI/FirebaseTodoApp/` folder (the same folder that has `FirebaseTodoAppApp.swift`).
+2. In Xcode, the red `GoogleService-Info.plist` turns normal. **Don't** drag it into Xcode again,
+   or you will get a duplicate.
 
 ### Step 5: Signing (Team)
 
 1. In Xcode, click the blue **FirebaseTodoApp** project icon at the top of the left sidebar.
 2. Select the **FirebaseTodoApp** target → **Signing & Capabilities** tab.
-3. **Team**: pick your Apple ID (or the lab account). If none is listed: **Add an Account…** and sign in
+3. **Team**: pick your own Apple ID or the lab account (the project currently has the Team from the Mac it was last built on). If none is listed: **Add an Account…** and sign in
    with any Apple ID (a free one works).
 4. Leave **Bundle Identifier** as `com.jani.FirebaseTodoApp`. It must match Firebase.
 5. You should see **Keychain Sharing** listed there already. Leave it.
@@ -100,7 +101,7 @@ git push
 
 | Problem | Fix |
 |---|---|
-| App crashes at launch saying it can't find `GoogleService-Info.plist` | Redo **Step 4**. Check the file is ticked for the FirebaseTodoApp target (select the file → right panel → *Target Membership*). |
+| App crashes at launch saying it can't find `GoogleService-Info.plist`, or the file is red in Xcode | Redo **Step 4**. The file must be inside the `FirebaseTodoApp/` folder with exactly that name. |
 | `No such module 'FirebaseAuth'` or `'FirebaseFirestore'` | Packages are not finished yet. Wait, or do *Reset Package Caches* (**Step 2**). |
 | Red error *"Signing requires a development team"* | **Step 5**: pick a Team. |
 | Sign up/sign in shows a **keychain** error | **Step 5**: make sure a Team is chosen and Keychain Sharing is listed. Then **Product → Clean Build Folder** (⇧⌘K) and run again. |

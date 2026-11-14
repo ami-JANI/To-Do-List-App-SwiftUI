@@ -53,9 +53,8 @@ Requirements: macOS with **Xcode 15.3 or newer**, iOS 17+ simulator.
 
 ### 2. Add `GoogleService-Info.plist`
 
-1. Open `FirebaseTodoApp.xcodeproj` in Xcode.
-2. Drag `GoogleService-Info.plist` into the yellow **FirebaseTodoApp** folder in the left sidebar.
-3. In the pop-up, tick **Copy items if needed** and make sure the **FirebaseTodoApp** target is ticked.
+The Xcode project already references `FirebaseTodoApp/GoogleService-Info.plist` (it shows in red until the file exists).
+Copy your downloaded `GoogleService-Info.plist` into the `FirebaseTodoApp/` folder in Finder. You don't need to drag it into Xcode.
 
 > This file is in `.gitignore`, so it will not be pushed to GitHub.
 
