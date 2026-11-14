@@ -18,6 +18,18 @@ A simple iOS to-do list app built with **SwiftUI**, **Firebase Authentication** 
 - Each user only sees their own tasks (stored at `users/{userId}/tasks/{taskId}`)
 - Filter tasks: All / Pending / Done
 
+## UI previews
+
+Mockups of the app's screens, drawn to match the SwiftUI views in `FirebaseTodoApp/Views/`.
+
+| Login | Sign Up | My Tasks |
+|:---:|:---:|:---:|
+| <img src="screenshots/login.png" width="230" alt="Login screen"> | <img src="screenshots/signup.png" width="230" alt="Sign up screen"> | <img src="screenshots/list.png" width="230" alt="Task list screen"> |
+
+| New Task (sheet) | Task Details |
+|:---:|:---:|
+| <img src="screenshots/add.png" width="230" alt="New task form"> | <img src="screenshots/detail.png" width="230" alt="Task details screen"> |
+
 ## Project structure
 
 ```
